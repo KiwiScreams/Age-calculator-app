@@ -151,3 +151,18 @@ input[type="number"]::-webkit-outer-spin-button
     color: red;
     font-weight: bold;
 }
+.input-error
+{
+    border: 1px solid red;
+}
+.label-error
+{
+    color: red;
+}
+.error-message
+{
+    color: red;
+    display: block;
+    text-align: center;
+    position: absolute;
+}

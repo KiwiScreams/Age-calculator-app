@@ -18,20 +18,24 @@ function inputValidationFunc(input, minv, maxv, err) {
 
 function errorCalculate(input, message) {
     const label = document.querySelector(`label[for="${input.id}"]`);
-    const errorText = input.parentElement.querySelector('.error-message');
-    errorText.innerHTML = message;
-    label.classList.add('error-text');
-    errorText.classList.remove('hidden');
-    input.classList.add('error');
+  const errorText = input.parentElement.querySelector('.error-message');
+  errorText.innerHTML = message;
+  label.classList.add('error-text');
+  errorText.classList.remove('hidden');
+  input.classList.add('error');
+  input.style.border = '1px solid red';
+  label.style.color = 'red';
 }
 
 function successCalculate(input) {
     const label = document.querySelector(`label[for="${input.id}"]`);
-    const errorText = input.parentElement.querySelector('.error-message');
-    label.classList.remove('error-text');
-    errorText.classList.add('hidden');
-    errorText.innerHTML = '';
-    input.classList.remove('error');
+  const errorText = input.parentElement.querySelector('.error-message');
+  label.classList.remove('error-text');
+  errorText.classList.add('hidden');
+  errorText.innerHTML = '';
+  input.classList.remove('error');
+  input.style.border = '';
+  label.style.color = '';
 }
 
 function calculateFunc() {
