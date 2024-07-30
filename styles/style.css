@@ -43,7 +43,7 @@ body
 }
 .container
 {
-    width: 80%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,7 +65,8 @@ body
     border-radius: 20px 24px 20px 24px;
     padding-left: 24px;
 }
-.container .input-container input::placeholder
+.container .input-container input::placeholder,
+.container .input-container input
 {
     font-weight: var(--font-weight-700);
     font-size: var(--font-size-32);
@@ -78,4 +79,36 @@ body
     font-size: var(--font-size-14);
     color: var(--grey-clr);
     font-weight: var(--font-weight-700);
+}
+.container .line
+{
+    width: 90%;
+    height: 1px;
+    background-color: var(--line-clr);
+}
+.container button
+{
+    background-color: var(--purple-clr);
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 span
+{
+    color: var(--purple-clr);
+    letter-spacing: 10px;
+}
+h1
+{
+    font-size: var(--font-size-104);
+    font-weight: var(--font-weight-800);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
 }
