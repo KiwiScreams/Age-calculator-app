@@ -10,20 +10,23 @@
 </head>
 <body>
   <section class="container">
-    <div class="input-container flex">
+    <form class="input-container flex">
       <div class="input">
         <label for="day">DAY</label>
         <input type="number" name="day" id="day" placeholder="DD">
+        <span class="error-message hidden"></span>
       </div>
       <div class="input">
-        <label for="day">MONTH</label>
+        <label for="month">MONTH</label>
         <input type="number" name="month" id="month" placeholder="MM">
+        <span class="error-message hidden"></span>
       </div>
       <div class="input">
-        <label for="day">YEAR</label>
+        <label for="year">YEAR</label>
         <input type="number" name="year" id="year" placeholder="YYYY">
+        <span class="error-message hidden"></span>
       </div>
-    </div>
+    </form>
     <div class="line-container flex">
       <div class="line"></div>
       <button id="btn">
@@ -31,9 +34,9 @@
       </button>
     </div>
     <div class="info-container">
-      <h1><span id="yy">--</span>years</h1>
-      <h1><span id="mm">--</span>months</h1>
-      <h1><span id="dd">--</span>days</h1>
+      <h1 class="output-year"><span id="yy">--</span>years</h1>
+      <h1 class="output-month"><span id="mm">--</span>months</h1>
+      <h1 class="output-day"><span id="dd">--</span>days</h1>
     </div>
   </section>
   <script src="./js/app.js"></script>
