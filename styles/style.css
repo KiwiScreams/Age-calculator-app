@@ -7,6 +7,18 @@
     text-decoration: none;
     border: none;
     outline: none;
+    transition: 0.3s;
+    font-family: 'font';
+}
+@font-face
+{
+    font-family: 'font';
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face
+{
+    font-family: 'font-bold';
+    src: url(../assets/fonts/Poppins-BoldItalic.ttf);
 }
 :root
 {
@@ -95,6 +107,17 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.container button:hover
+{
+    background-color: var(--black-clr);
+    cursor: pointer;
+}
+h1
+{
+    font-family: 'font-bold';
+    color: var(--black-clr);
+    font-weight: var(--font-weight-800);
 }
 h1 span
 {
