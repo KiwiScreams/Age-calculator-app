@@ -48,9 +48,9 @@ function calculateFunc() {
 }
 
 function calculateFuncInYearsMonthsDays(birthDate, today) {
-    const years = today.getFullYear() - birthDate.getFullYear();
-    const months = today.getMonth() - birthDate.getMonth();
-    const days = today.getDate() - birthDate.getDate();
+    let years = today.getFullYear() - birthDate.getFullYear();
+    let months = today.getMonth() - birthDate.getMonth();
+    let days = today.getDate() - birthDate.getDate();
     if (months < 0) {
         years--;
         months += 12;
