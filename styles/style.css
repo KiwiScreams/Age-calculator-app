@@ -21,23 +21,19 @@
 }
 
 :root {
-  /* COLOR */
   --grey-clr: #716f6f;
   --black-clr: #151515;
   --purple-clr: #854dff;
   --light-grey-clr: #f0f0f0;
   --line-clr: #dcdcdc;
   --white-clr: #fff;
-  /* FONT WEIGHT */
   --font-weight-700: 700;
   --font-weight-800: 800;
-  /* FONT SIZE */
   --font-size-14: 14px;
   --font-size-20: 20px;
   --font-size-32: 32px;
   --font-size-56: 56px;
   --font-size-104: 104px;
-  /* LETTER SPACING */
   --letter-spacing-25per: 25%;
   --letter-spacing-1per: 1%;
 }
@@ -195,7 +191,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .container .input-container {
     width: 100%;
-    /* gap: 10px; */
   }
 
   .container .input-container input::placeholder,
